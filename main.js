@@ -20,3 +20,4 @@ const createBoard = () =>  {
     })
 
 }
+createBoard();
