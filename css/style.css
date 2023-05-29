@@ -1,0 +1,24 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #e8dcdf;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#gameboard {
+    width: 30em;
+    height: 30em;
+    background-color: #526D82;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.square {
+    width: 10em;
+    height: 10em;
+    background-color: #DDE6ED;
+}
