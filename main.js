@@ -7,3 +7,4 @@ const howToPlay = document.querySelector('#howtoplay');
 
 // CREATING BOARD CELLS ARRAY
 
+const boardCells = ['', '', '', '', '', '', '', '', ''];
