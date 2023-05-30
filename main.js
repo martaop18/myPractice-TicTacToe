@@ -31,8 +31,9 @@ createBoard();
 function goClick (e) {
     // console.log(e.target)
 const goDisplay = document.createElement('div');
-goDisplay.classList.add('go');
+goDisplay.classList.add(go);
 e.target.append(goDisplay);
 go = go === 'circle' ? 'cross' : 'circle'
-playDisplay.textContent = 'it is now' + go + "'s go"
+playDisplay.textContent = 'it is now ' + go + "'s go"
+e.target.removeEventlistener('click', goClick)
 }
