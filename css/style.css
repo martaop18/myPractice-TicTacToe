@@ -1,7 +1,7 @@
 body {
     padding: 0;
     margin: 0;
-    background-color: #9cb2c2 ;
+    background-color: #86818e ;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -15,12 +15,25 @@ body {
     background-color: #F9F5F6;
     display: flex;
     flex-wrap: wrap;
+    border: solid 0.2em #4942E4;
 }
 
 .square {
     width: 10em;
     height: 10em;
     background-color: #DDE6ED;
-    border: solid 0.2em black;
+    border: solid 0.2em #4942E4;
     box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.circle {
+    width: 20em;
+    height: 20em;
+    border-radius: 50%;
+    border: solid 1em salmon ;
+    box-sizing: border-box;
+
 }

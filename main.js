@@ -14,10 +14,14 @@ const boardCells = ['', '', '', '', '', '', '', '', ''];
 
 const createBoard = () =>  {
     boardCells.forEach((cell, index) => {
-        const cellElement = document.createElement('div')
-        cellElement.classList.add('square')
+        const cellElement = document.createElement('div');
+        cellElement.classList.add('square');
+        cellElement.id = index
+        cellElement.addEventListener('click', goClick)
         gameBoard.append(cellElement)
     })
 
 }
 createBoard();
+
+// CREATING FUNCTION TO PRINT CIRCLES AND CROSSES GOCLICK
