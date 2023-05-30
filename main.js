@@ -37,5 +37,15 @@ go = go === 'circle' ? 'cross' : 'circle'
 playDisplay.textContent = 'it is now ' + go + "'s go"
 e.target.removeEventlistener('click', goClick)
 checkScore()
+
+function checkScore() {
+    // SETING WINNING COMBOS ARRAYS
+    const winningCombos = [ 
+        [0,1,2],[3,4,5],[6,7,8],
+        [0,3,6],[1,4,7],[2,5,8],
+        [0,4,8],[2,4,6]   
+    
+    ]
+}
 }
 
