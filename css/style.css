@@ -7,8 +7,13 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-
 }
+
+
+#playdisplay {
+    font-size: larger;
+    color: aliceblue;
+ }
 
 #gameboard {
     width: 30em;
@@ -34,7 +39,7 @@ body {
     width: 8em;
     height: 8em;
     border-radius: 50%;
-    border: solid 1.3em #7E1717 ;
+    border: solid 1.3em black;
     box-sizing: border-box;
   
 }
@@ -49,7 +54,7 @@ body {
 .cross:before, .cross:after {
     content: '';
     position: absolute;
-    background-color: #7E1717;
+    background-color: #8B1874;
 }
 
 .cross:before {
