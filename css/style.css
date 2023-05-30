@@ -41,7 +41,7 @@ body {
     width: 8em;
     height: 8em;
     position: relative;
-    border: solid 0.5em salmon ;
+    transform: rotate(45deg);
     box-sizing: border-box;
 }
 
@@ -49,4 +49,17 @@ body {
     content: '';
     position: absolute;
     background-color: salmon;
+}
+
+.cross:before {
+    left: 50%;
+    width: 20%;
+    margin-left: -10%;
+    height: 100%;
+}
+.cross:after{
+    top: 50%;
+    height: 20%;
+    margin-top: -10%;
+    width: 100%;
 }

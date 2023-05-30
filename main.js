@@ -3,11 +3,14 @@
 
 
 const gameBoard = document.querySelector('#gameboard');
-const howToPlay = document.querySelector('#howtoplay');
+const playDisplay = document.querySelector('#playdisplay');
 
 // CREATING BOARD CELLS ARRAY
 
 const boardCells = ['', '', '', '', '', '', '', '', ''];
+
+let go = 'circle'
+playDisplay.textContent = 'circle goes first'
 
 // SETTING UP FUNCTION TO CREATE THE BOARD WITH FOR-EACH
 // then create a new const to build the board with a div and the 9 squares with a class
@@ -28,6 +31,8 @@ createBoard();
 function goClick (e) {
     // console.log(e.target)
 const goDisplay = document.createElement('div');
-goDisplay.classList.add('circle');
+goDisplay.classList.add('go');
 e.target.append(goDisplay);
+go = go === 'circle' ? 'cross' : 'circle'
+playDisplay.textContent = 'it is now' + go + "'s go"
 }
