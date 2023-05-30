@@ -13,15 +13,21 @@ const boardCells = ['', '', '', '', '', '', '', '', ''];
 // then create a new const to build the board with a div and the 9 squares with a class
 
 const createBoard = () =>  {
-    boardCells.forEach((cell, index) => {
+    boardCells.forEach((_cell, index) => {
         const cellElement = document.createElement('div');
         cellElement.classList.add('square');
         cellElement.id = index
-        cellElement.addEventListener('click', goClick)
-        gameBoard.append(cellElement)
-    })
+        cellElement.addEventListener('click', goClick);
+        gameBoard.append(cellElement);
+    });
 
 }
 createBoard();
 
 // CREATING FUNCTION TO PRINT CIRCLES AND CROSSES GOCLICK
+function goClick (e) {
+    // console.log(e.target)
+const goDisplay = document.createElement('div');
+goDisplay.classList.add('circle');
+e.target.append(goDisplay);
+}

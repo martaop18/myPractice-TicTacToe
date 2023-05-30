@@ -15,25 +15,38 @@ body {
     background-color: #F9F5F6;
     display: flex;
     flex-wrap: wrap;
-    border: solid 0.2em #4942E4;
+    border: solid 0.2em  #3a2639;;
 }
 
 .square {
     width: 10em;
     height: 10em;
     background-color: #DDE6ED;
-    border: solid 0.2em #4942E4;
+    border: solid 0.2em #3a2639;
     box-sizing: border-box;
     display: flex;
     justify-content: center;
-    align-content: center;
+   align-items: center;
 }
 
 .circle {
-    width: 20em;
-    height: 20em;
+    width: 8em;
+    height: 8em;
     border-radius: 50%;
-    border: solid 1em salmon ;
+    border: solid 0.5em salmon ;
     box-sizing: border-box;
+  
+}
+.cross {
+    width: 8em;
+    height: 8em;
+    position: relative;
+    border: solid 0.5em salmon ;
+    box-sizing: border-box;
+}
 
+.cross:before, .cross:after {
+    content: '';
+    position: absolute;
+    background-color: salmon;
 }
