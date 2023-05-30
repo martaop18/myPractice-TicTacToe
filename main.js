@@ -54,6 +54,15 @@ function checkScore() {
         if (circleWins) {
             playDisplay.textContent = "You're the winner!"
             allSquares.forEach(square => square.replaceWith(square.cloneNode(true)));
+            return
+        }
+    })
+    winningCombos.forEach(array => {
+        const crossWins = array.every(cell => allSquares[cell].firstChild?.classList.contains('cross'))
+        if (crossWins) {
+            playDisplay.textContent = "You're the winner!"
+            allSquares.forEach(square => square.replaceWith(square.cloneNode(true)));
+            return
         }
     })
 }

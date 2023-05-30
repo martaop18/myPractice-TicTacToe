@@ -9,6 +9,19 @@ body {
     height: 100vh;
 }
 
+.tictactoe{
+    font-family:sans-serif;
+    font-size: larger;
+    color: aliceblue
+}
+
+a:link, a:visited, a:active {
+    text-decoration:none;
+}
+.play {
+    color: #FF6969;
+    cursor: pointer;
+}
 
 #playdisplay {
     font-size: larger;
