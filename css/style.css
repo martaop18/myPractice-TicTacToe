@@ -1,18 +1,19 @@
 body {
     padding: 0;
     margin: 0;
-    background-color: #86818e ;
+    background-color: #068DA9;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
+
 }
 
 #gameboard {
     width: 30em;
     height: 30em;
-    background-color: #F9F5F6;
+    background-color: #068DA9;
     display: flex;
     flex-wrap: wrap;
     border: solid 0.2em  #3a2639;;
@@ -21,7 +22,7 @@ body {
 .square {
     width: 10em;
     height: 10em;
-    background-color: #DDE6ED;
+    background-color: #c1d0d2;
     border: solid 0.2em #3a2639;
     box-sizing: border-box;
     display: flex;
@@ -33,7 +34,7 @@ body {
     width: 8em;
     height: 8em;
     border-radius: 50%;
-    border: solid 0.5em salmon ;
+    border: solid 1.3em #7E1717 ;
     box-sizing: border-box;
   
 }
@@ -48,7 +49,7 @@ body {
 .cross:before, .cross:after {
     content: '';
     position: absolute;
-    background-color: salmon;
+    background-color: #7E1717;
 }
 
 .cross:before {

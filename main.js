@@ -36,4 +36,6 @@ e.target.append(goDisplay);
 go = go === 'circle' ? 'cross' : 'circle'
 playDisplay.textContent = 'it is now ' + go + "'s go"
 e.target.removeEventlistener('click', goClick)
+checkScore()
 }
+
